@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(239, 237, 237);
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(239, 237, 237);
+  border-bottom: 1px solid black;
+  display: flex;
+}
+.heading {
+  width: 50vw;
+  height: 100%;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.heading h2 {
+  position: absolute;
+  height: 80%;
+  width: fit-content;
+  font-size: 2.8vw;
+  font-weight: 700;
+  left: 12%;
+  top: 10px;
+}
+.icons {
+  width: 50vw;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3vw;
+}
+.bmenu {
+  height: 80%;
+  width: 5vw;
+  /* background-color: red;
+  border: 1px solid black; */
+  font-size: 2.2vw;
+  margin-top: 12px;
+}
+.menu {
+  display: none;
+  height: 80%;
+  width: 5vw;
+  /* background-color: red;
+  border: 1px solid black; */
+  font-size: 2.5vw;
+  margin-top: 10px;
+}
+.second {
+  height: 25vh;
+  width: 100vw;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  height: 40%;
+  width: 30%;
+  /* background-color: rgb(229, 226, 226); */
+  display: flex;
+  align-items: last baseline;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.inputBox input {
+  /* height: 20%; */
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: transparent;
+  font-size: 24px;
+}
+.inputBox button {
+  border: none;
+  background: transparent;
+  margin-left: 2px;
+}
+.inputBox i {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.last {
+  height: 55vh;
+  width: 100vw;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+}
+.content_box {
+  height: 90%;
+  width: 60%;
+  background-color: rgb(239, 224, 224);
+  border-radius: 2%;
+  box-shadow: 2px;
+  /* display: none; */
+  position: relative;
+}
+.content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  position: absolute;
+  margin: auto;
+  padding: 10px;
+  display: none;
+}
+.content audio {
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+.content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.content h4 span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer {
+  height: 10vh;
+  width: 100vw;
+  border: 1px solid black;
+}
+.footer h5 {
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(244, 239, 239);
+  }
+  .main {
+    height: 100vh;
+    width: 100vw;
+  }
+  .bmenu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    /* background-color: red; */
+    width: 40px;
+    font-size: 28px;
+    padding-top: 14px;
+  }
+  .heading h2 {
+    font-size: 23px;
+    /* background-color: red; */
+    padding: 20px;
+    left: 5%;
+  }
+  .inputBox {
+    width: 70%;
+  }
+  .inputBox input {
+    font-size: 20px;
+  }
+  .inputBox i {
+    font-size: 24px;
+  }
+  .content_box {
+    height: 80%;
+    width: 80%;
+    position: relative;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .content audio {
+    width: 65vw;
+    left: 0;
+  }
+  .content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10vh;
+  }
+  .content h4 span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}

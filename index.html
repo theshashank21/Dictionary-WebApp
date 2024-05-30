@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Shashank's Dictionary</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="heading">
+          <h2>Dictionary</h2>
+        </div>
+        <div class="icons">
+          <i class="ri-github-fill bmenu"></i>
+          <i class="ri-linkedin-box-fill bmenu"></i>
+          <i class="ri-instagram-fill bmenu"></i>
+          <i class="ri-menu-3-line menu"></i>
+        </div>
+      </div>
+      <div class="second">
+        <div class="inputBox">
+          <input type="text" / placeholder="Search..." value=""
+          onchange="c(this.value)">
+          <button><i class="ri-search-line"></i></button>
+        </div>
+      </div>
+      <div class="last">
+        <div class="content_box">
+          <div class="content" id="con">
+            <center><audio controls id="aud"></audio></center>
+            <h4>
+              Defination:
+              <span id="def"> </span>
+            </h4>
+            <h4>
+              Example:
+              <span id="ex"> </span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <center><h5>Made by Shashank Pandey ❤️</h5></center>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
